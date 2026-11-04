@@ -12,3 +12,11 @@ jobs:
     steps:
       - name: Synthetic fixture only - no production privacy or native Mac coverage
         run: echo 'Synthetic GitHub Actions identity fixture only. This is not HyperCine privacy validation or native Mac qualification.'
+  wrong-app-identity:
+    if: contains(github.ref, 'wrong-app')
+    name: HyperCI / Mac relay
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Deliberate wrong-App identity fixture, not a Mac relay result
+        run: echo 'Synthetic wrong-source check from GitHub Actions; this must NOT satisfy the dedicated reporter App rule.'
