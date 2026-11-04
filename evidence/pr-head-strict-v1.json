@@ -1,0 +1,703 @@
+{
+  "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+  "fixture_only": true,
+  "native_mac_qualification": false,
+  "profile": "PR HEAD + strict current base + tree equality + explicit local approval",
+  "reporter_app_id": 5612385,
+  "privacy_app_id": 15368,
+  "effective_protection": {
+    "enforce_admins": true,
+    "required_status_checks": {
+      "url": "https://api.github.com/repos/louis-0hrs/HyperCI-Check-Acceptance/branches/main/protection/required_status_checks",
+      "strict": true,
+      "contexts": [
+        "Publication privacy (all new commits)",
+        "HyperCI / Mac relay"
+      ],
+      "contexts_url": "https://api.github.com/repos/louis-0hrs/HyperCI-Check-Acceptance/branches/main/protection/required_status_checks/contexts",
+      "checks": [
+        {
+          "context": "Publication privacy (all new commits)",
+          "app_id": 15368
+        },
+        {
+          "context": "HyperCI / Mac relay",
+          "app_id": 5612385
+        }
+      ]
+    },
+    "required_pull_request_reviews": {
+      "url": "https://api.github.com/repos/louis-0hrs/HyperCI-Check-Acceptance/branches/main/protection/required_pull_request_reviews",
+      "dismiss_stale_reviews": false,
+      "require_code_owner_reviews": false,
+      "require_last_push_approval": false,
+      "required_approving_review_count": 0
+    }
+  },
+  "blocked_decisions": 11,
+  "successful_positive_merges": 2,
+  "cases": [
+    {
+      "name": "missing",
+      "pull_number": 13,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "missing",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" was not set by the expected GitHub app.",
+          "evaluated_candidate_sha": "83e8014ad469ed9fd2ce48c8242b28de95213b66",
+          "head_sha": "83e8014ad469ed9fd2ce48c8242b28de95213b66",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126675124138,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "83e8014ad469ed9fd2ce48c8242b28de95213b66",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "58595a47-12a2-56cc-8763-a1b1b5d70864"
+            },
+            {
+              "id": 126675121909,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "83e8014ad469ed9fd2ce48c8242b28de95213b66",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "e94fac5d-d4eb-5b8a-8027-9664c9567d1f"
+            }
+          ]
+        }
+      ],
+      "reported_check": null,
+      "producer_aggregate": null
+    },
+    {
+      "name": "wrong-app",
+      "pull_number": 14,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "wrong-app",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" was not set by the expected GitHub app.",
+          "evaluated_candidate_sha": "ba15378377c318c368e073f4d4838a8975cf87b0",
+          "head_sha": "ba15378377c318c368e073f4d4838a8975cf87b0",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126675230873,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "ba15378377c318c368e073f4d4838a8975cf87b0",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "2c00d3fe-3350-5d7b-b49b-28220518db27"
+            },
+            {
+              "id": 126675230368,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "ba15378377c318c368e073f4d4838a8975cf87b0",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "15600f40-48d6-5e4c-b464-18c29d770d89"
+            }
+          ]
+        }
+      ],
+      "reported_check": null,
+      "producer_aggregate": null
+    },
+    {
+      "name": "pending",
+      "pull_number": 15,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "pending",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" is in progress.",
+          "evaluated_candidate_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+          "head_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126738082291,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+              "status": "in_progress",
+              "conclusion": null,
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:25de8f5424ee9dc3cf2da09dae70842e0db5aec0:eeb61d787d48496895a402b072215155:6002"
+            },
+            {
+              "id": 126675376028,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "c6242a90-d038-5f75-9968-57d1a093d3b0"
+            },
+            {
+              "id": 126675372874,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "2ca730e3-6472-537f-99f3-95fcbcd6e4aa"
+            }
+          ]
+        }
+      ],
+      "reported_check": {
+        "id": 126738082291,
+        "head_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+        "external_id": "hyperci-v1:25de8f5424ee9dc3cf2da09dae70842e0db5aec0:eeb61d787d48496895a402b072215155:6002",
+        "status": "in_progress",
+        "conclusion": null,
+        "app_id": 5612385
+      },
+      "producer_aggregate": "pending"
+    },
+    {
+      "name": "failed",
+      "pull_number": 16,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "failed",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" is failing.",
+          "evaluated_candidate_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+          "head_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126738245959,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+              "status": "completed",
+              "conclusion": "failure",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:c5ebc69c36c2496b5add2219b1118a540cf596af:ffa23a2ab11646499a7b2845f76e3d3a:6003"
+            },
+            {
+              "id": 126675485368,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "ed0c0954-210d-5deb-b36f-3a1efc6ffe3b"
+            },
+            {
+              "id": 126675482810,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "dc521cde-a214-52f3-8819-b51bcfa0331f"
+            }
+          ]
+        }
+      ],
+      "reported_check": {
+        "id": 126738245959,
+        "head_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+        "external_id": "hyperci-v1:c5ebc69c36c2496b5add2219b1118a540cf596af:ffa23a2ab11646499a7b2845f76e3d3a:6003",
+        "status": "completed",
+        "conclusion": "failure",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "failure"
+    },
+    {
+      "name": "cancelled-lane",
+      "pull_number": 17,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "cancelled-lane",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" is failing.",
+          "evaluated_candidate_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+          "head_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126738395744,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+              "status": "completed",
+              "conclusion": "failure",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:b22d05bf0defe6d2e84be64bb0e4475392076d80:f96cd712df034ac79e398f405c860628:6004"
+            },
+            {
+              "id": 126675628753,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "7e671d83-8ab8-566c-a52c-78b786a63bf9"
+            },
+            {
+              "id": 126675625641,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "87236be1-e4fa-5b8f-9ce2-0b00aac5b4b0"
+            }
+          ]
+        }
+      ],
+      "reported_check": {
+        "id": 126738395744,
+        "head_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+        "external_id": "hyperci-v1:b22d05bf0defe6d2e84be64bb0e4475392076d80:f96cd712df034ac79e398f405c860628:6004",
+        "status": "completed",
+        "conclusion": "failure",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "failure"
+    },
+    {
+      "name": "wrong-nonce",
+      "pull_number": 18,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "wrong-nonce",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" is failing.",
+          "evaluated_candidate_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+          "head_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126738556688,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+              "status": "completed",
+              "conclusion": "failure",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:432baf82ae672141a9d508a9b373bc2751d11950:df61de83398543e6896f7af5f97de6f3:6005"
+            },
+            {
+              "id": 126675767039,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "3e73cc18-a4a3-580d-83f2-a378ec0ec7b0"
+            },
+            {
+              "id": 126675764438,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "89fdc404-313b-508a-a929-f73c9a9d9e40"
+            }
+          ]
+        }
+      ],
+      "reported_check": {
+        "id": 126738556688,
+        "head_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+        "external_id": "hyperci-v1:432baf82ae672141a9d508a9b373bc2751d11950:df61de83398543e6896f7af5f97de6f3:6005",
+        "status": "completed",
+        "conclusion": "failure",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "failure"
+    },
+    {
+      "name": "wrong-run",
+      "pull_number": 19,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "wrong-run",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" is failing.",
+          "evaluated_candidate_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+          "head_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126739322217,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+              "status": "completed",
+              "conclusion": "failure",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:f828d05fc81777eba176be151a4858cecaae8254:6ddc0ae9a5d843d19292a3660a904120:6006"
+            },
+            {
+              "id": 126675918284,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "bf5cc69d-fb45-5f20-91e0-d690db17f491"
+            },
+            {
+              "id": 126675915568,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "eeb2eeba-d3ef-5df2-a7a3-6f231ecc29b9"
+            }
+          ]
+        }
+      ],
+      "reported_check": {
+        "id": 126739322217,
+        "head_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+        "external_id": "hyperci-v1:f828d05fc81777eba176be151a4858cecaae8254:6ddc0ae9a5d843d19292a3660a904120:6006",
+        "status": "completed",
+        "conclusion": "failure",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "failure"
+    },
+    {
+      "name": "wrong-lane",
+      "pull_number": 20,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "wrong-lane",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" is failing.",
+          "evaluated_candidate_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+          "head_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126739455013,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+              "status": "completed",
+              "conclusion": "failure",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:c279de2aac45eb6231c28ccb07eabea0fed0054b:2b08e504027d4d1c96f38143349f26df:6007"
+            },
+            {
+              "id": 126676055580,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "3a20995a-aacb-5294-8be4-8ea63be2220c"
+            },
+            {
+              "id": 126676052535,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "d6d96275-1710-5e32-9db0-aa8043226a5a"
+            }
+          ]
+        }
+      ],
+      "reported_check": {
+        "id": 126739455013,
+        "head_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+        "external_id": "hyperci-v1:c279de2aac45eb6231c28ccb07eabea0fed0054b:2b08e504027d4d1c96f38143349f26df:6007",
+        "status": "completed",
+        "conclusion": "failure",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "failure"
+    },
+    {
+      "name": "controller-offline",
+      "pull_number": 21,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "controller-offline",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" was not set by the expected GitHub app.",
+          "evaluated_candidate_sha": "38c5ca2f4e33009646591b9a92748e4c636b3252",
+          "head_sha": "38c5ca2f4e33009646591b9a92748e4c636b3252",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126676168657,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "38c5ca2f4e33009646591b9a92748e4c636b3252",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "d90a4cbb-ed05-56e1-8876-dfc4ea544947"
+            },
+            {
+              "id": 126676165850,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "38c5ca2f4e33009646591b9a92748e4c636b3252",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "c9bdc712-49ab-57b7-8b2b-42b4643473c6"
+            }
+          ]
+        }
+      ],
+      "reported_check": null,
+      "producer_aggregate": null
+    },
+    {
+      "name": "stale-head",
+      "pull_number": 22,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "stale-head-success-cannot-green-new-sha",
+          "http_status": 405,
+          "merged": false,
+          "message": "Required status check \"HyperCI / Mac relay\" was not set by the expected GitHub app.",
+          "evaluated_candidate_sha": "075985a3e6b331aebb4024941e6acf32ac98349e",
+          "head_sha": "075985a3e6b331aebb4024941e6acf32ac98349e",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": null,
+          "observed_checks": [
+            {
+              "id": 126739753220,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "075985a3e6b331aebb4024941e6acf32ac98349e",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "c6f14abb-4095-58fe-be29-b252d20784b4"
+            },
+            {
+              "id": 126739751108,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "075985a3e6b331aebb4024941e6acf32ac98349e",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "729b6264-0642-5a30-aa0e-9fd6918b6e5b"
+            }
+          ]
+        }
+      ],
+      "reported_check": null,
+      "producer_aggregate": "success"
+    },
+    {
+      "name": "stale-base",
+      "pull_number": 23,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "strict-base-blocks-old-green-head",
+          "http_status": 405,
+          "merged": false,
+          "message": "2 of 2 required status checks are expected.",
+          "head_sha": "1d47b488e07cb820151907f66931733da8cc9747",
+          "current_base_sha": "b14df33f001624ee72daf9e3b9a6c5dad33ff799",
+          "old_approval_rejected": true,
+          "observed_checks": [
+            {
+              "id": 126748442563,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "1d47b488e07cb820151907f66931733da8cc9747",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:1d47b488e07cb820151907f66931733da8cc9747:1cdc403a07d04e2d951072ed42e9acf6:6010"
+            },
+            {
+              "id": 126676447137,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "1d47b488e07cb820151907f66931733da8cc9747",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "d7e74779-c37c-57ae-b247-51aff107a751"
+            },
+            {
+              "id": 126676444154,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "1d47b488e07cb820151907f66931733da8cc9747",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "6d6da4b0-26ee-5083-b4f9-35acbccb161a"
+            }
+          ]
+        },
+        {
+          "case": "genuine-App-exact-renewed-candidate-positive",
+          "http_status": 200,
+          "merged": true,
+          "message": null,
+          "evaluated_candidate_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+          "head_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+          "base_sha": "b14df33f001624ee72daf9e3b9a6c5dad33ff799",
+          "merged_sha": "48642ecbf48e2f108d24c994ec1596ceff781fb8",
+          "observed_checks": [
+            {
+              "id": 126752041810,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:9c1eebf365ce29c89b2f37f32925b5d4febce072:e9f2b2435c3d4071b6cc7eedd9c792a8:6110"
+            },
+            {
+              "id": 126751859445,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "47d9ddf2-48b1-519a-bba7-177c702166e3"
+            },
+            {
+              "id": 126751857243,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "2c3ce828-d204-547d-b83e-a0e8e367ad6d"
+            }
+          ],
+          "actual_merge_tree": "cf4061d617614869e8c706b10e802712b3d70e3f",
+          "actual_merge_parents": [
+            "b14df33f001624ee72daf9e3b9a6c5dad33ff799",
+            "9c1eebf365ce29c89b2f37f32925b5d4febce072"
+          ],
+          "qualified_tree": "cf4061d617614869e8c706b10e802712b3d70e3f",
+          "public_author_verified": true
+        }
+      ],
+      "reported_check": {
+        "id": 126752041810,
+        "head_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+        "external_id": "hyperci-v1:9c1eebf365ce29c89b2f37f32925b5d4febce072:e9f2b2435c3d4071b6cc7eedd9c792a8:6110",
+        "status": "completed",
+        "conclusion": "success",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "success"
+    },
+    {
+      "name": "positive-base-advance",
+      "pull_number": 24,
+      "synthetic_only": true,
+      "decisions": [
+        {
+          "case": "genuine-App-positive-base-advance",
+          "http_status": 200,
+          "merged": true,
+          "message": null,
+          "evaluated_candidate_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+          "head_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+          "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+          "merged_sha": "b14df33f001624ee72daf9e3b9a6c5dad33ff799",
+          "observed_checks": [
+            {
+              "id": 126748533438,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 5612385,
+              "external_id": "hyperci-v1:589f0c5496616f557a85c620c5e7c2c7e6e47fa9:f9d26df9124d4e2681a5c812691736d5:6011"
+            },
+            {
+              "id": 126676584773,
+              "name": "HyperCI / Mac relay",
+              "head_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+              "status": "completed",
+              "conclusion": "skipped",
+              "app_id": 15368,
+              "external_id": "745f780f-6a98-5e2b-82f5-4a3deed6771f"
+            },
+            {
+              "id": 126676582639,
+              "name": "Publication privacy (all new commits)",
+              "head_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+              "status": "completed",
+              "conclusion": "success",
+              "app_id": 15368,
+              "external_id": "f20d30c4-5f06-58cf-aaa1-38358436278a"
+            }
+          ],
+          "actual_merge_tree": "c11f47072dc422855d10137e0216205b61740c41",
+          "actual_merge_parents": [
+            "03c29dd7c63971229712ab7e5477a25779ae333c",
+            "589f0c5496616f557a85c620c5e7c2c7e6e47fa9"
+          ],
+          "qualified_tree": "c11f47072dc422855d10137e0216205b61740c41",
+          "public_author_verified": true
+        }
+      ],
+      "reported_check": {
+        "id": 126748533438,
+        "head_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+        "external_id": "hyperci-v1:589f0c5496616f557a85c620c5e7c2c7e6e47fa9:f9d26df9124d4e2681a5c812691736d5:6011",
+        "status": "completed",
+        "conclusion": "success",
+        "app_id": 5612385
+      },
+      "producer_aggregate": "success"
+    }
+  ],
+  "previous_profile": {
+    "name": "synthetic test-merge SHA",
+    "result": "FAILED_POSITIVE_CONTROL",
+    "fixture_pull": 12,
+    "check_id": 126647219024
+  },
+  "production_changes": false,
+  "production_acceptance": false,
+  "limitations": [
+    "Synthetic fixture results are not native Mac results.",
+    "Strict-current-base is a stronger proposed migration policy than current production rules.",
+    "GitHub does not validate nonce/run/lane semantics; the trusted reporter must.",
+    "Production PR scheduling, App installation and additive protection migration remain separately unaccepted."
+  ]
+}
