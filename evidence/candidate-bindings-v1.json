@@ -1,0 +1,219 @@
+{
+  "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+  "synthetic_only": true,
+  "cases": [
+    {
+      "case": "missing",
+      "pull_number": 13,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 13,
+        "head_sha": "83e8014ad469ed9fd2ce48c8242b28de95213b66",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "83e8014ad469ed9fd2ce48c8242b28de95213b66",
+        "test_merge_sha": "98f3fd387f0d33bc87e1f592bebebccd6128c79f",
+        "tree_sha": "b1031ea163913d708efd9c606e0ea3c828e2b638",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "wrong-app",
+      "pull_number": 14,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 14,
+        "head_sha": "ba15378377c318c368e073f4d4838a8975cf87b0",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "ba15378377c318c368e073f4d4838a8975cf87b0",
+        "test_merge_sha": "a595e723512341aec62c51ecc7f32107cd9d2db0",
+        "tree_sha": "7d1dfce9d621bf4b15bdce2e294bcc5bd59f658d",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "pending",
+      "pull_number": 15,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 15,
+        "head_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "25de8f5424ee9dc3cf2da09dae70842e0db5aec0",
+        "test_merge_sha": "e28e7515b51064bcfe278b9219d9e92bf4509b52",
+        "tree_sha": "b175ca277b3d9e40d110c106941cdc519b9dd7c5",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "failed",
+      "pull_number": 16,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 16,
+        "head_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "c5ebc69c36c2496b5add2219b1118a540cf596af",
+        "test_merge_sha": "8f27a743242d9e6c2fc14f20f94b64d40db9efbe",
+        "tree_sha": "d1045e9e7fedc073284d28c499dafc2693737421",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "cancelled-lane",
+      "pull_number": 17,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 17,
+        "head_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "b22d05bf0defe6d2e84be64bb0e4475392076d80",
+        "test_merge_sha": "1107d2b865ab9c33991b98147d884fac196e01c4",
+        "tree_sha": "85eb0bbafd6e871bac133501d4fcb9808aa17b92",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "wrong-nonce",
+      "pull_number": 18,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 18,
+        "head_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "432baf82ae672141a9d508a9b373bc2751d11950",
+        "test_merge_sha": "7e02583ce84b86ea472ad2fbc49a83c53eeda3c9",
+        "tree_sha": "623a872fe5d8204ca82b5d9ae8437a8b54f437f3",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "wrong-run",
+      "pull_number": 19,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 19,
+        "head_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "f828d05fc81777eba176be151a4858cecaae8254",
+        "test_merge_sha": "9e6058446c1e5d74bfbfcf517c45a53d3f78c5aa",
+        "tree_sha": "dbac1805aa75eac7b76b902aa13a8fe072a43e41",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "wrong-lane",
+      "pull_number": 20,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 20,
+        "head_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "c279de2aac45eb6231c28ccb07eabea0fed0054b",
+        "test_merge_sha": "ed2b2ac28d56b96682a53c6795c57dffc7418e9c",
+        "tree_sha": "9fa4693be8f155ce913f9655dc624509ea646d59",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "controller-offline",
+      "pull_number": 21,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 21,
+        "head_sha": "38c5ca2f4e33009646591b9a92748e4c636b3252",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "38c5ca2f4e33009646591b9a92748e4c636b3252",
+        "test_merge_sha": "29c20bef6997421f7eef93d033f224f70b4dae3c",
+        "tree_sha": "0cf6ae5933ed2fef3442fc559124b05352d12763",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    },
+    {
+      "case": "stale-head",
+      "pull_number": 22,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 22,
+        "head_sha": "075985a3e6b331aebb4024941e6acf32ac98349e",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "075985a3e6b331aebb4024941e6acf32ac98349e",
+        "test_merge_sha": "8b93634fab73c51bcf69c2571ca6a93be5dab6f5",
+        "tree_sha": "9118c8de4a753b979245d79496b06412448121d0",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": [
+        {
+          "reason": "head advanced",
+          "old_approval_rejected": true,
+          "old_approval": {
+            "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+            "pull_number": 22,
+            "head_sha": "87f5cc38dcaa64e033eda5874bf2a19617b1f38a",
+            "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+            "candidate_sha": "87f5cc38dcaa64e033eda5874bf2a19617b1f38a",
+            "test_merge_sha": "2d2e4de20f2f263a29e8486b97c751e7d067645f",
+            "tree_sha": "c373064ed1f4cd7322e04a022afce6abc0b255ef",
+            "selection": "head-strict-current-base"
+          },
+          "old_check_id": 126739590059
+        }
+      ]
+    },
+    {
+      "case": "stale-base",
+      "pull_number": 23,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 23,
+        "head_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+        "base_sha": "b14df33f001624ee72daf9e3b9a6c5dad33ff799",
+        "candidate_sha": "9c1eebf365ce29c89b2f37f32925b5d4febce072",
+        "test_merge_sha": "3db98570f1a729c85ec078ce83f3a0806cb07231",
+        "tree_sha": "cf4061d617614869e8c706b10e802712b3d70e3f",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": [
+        {
+          "reason": "protected target base advanced",
+          "old_approval_rejected": true,
+          "old_approval": {
+            "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+            "pull_number": 23,
+            "head_sha": "1d47b488e07cb820151907f66931733da8cc9747",
+            "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+            "candidate_sha": "1d47b488e07cb820151907f66931733da8cc9747",
+            "test_merge_sha": "7ca2c29a716c64ee8f14f343c7d1e9c131297ce2",
+            "tree_sha": "74706e87175bc4d016bff86236665cef0ea007c3",
+            "selection": "head-strict-current-base"
+          },
+          "old_check_id": 126748442563
+        }
+      ]
+    },
+    {
+      "case": "positive-base-advance",
+      "pull_number": 24,
+      "final_approval": {
+        "repository": "louis-0hrs/HyperCI-Check-Acceptance",
+        "pull_number": 24,
+        "head_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+        "base_sha": "03c29dd7c63971229712ab7e5477a25779ae333c",
+        "candidate_sha": "589f0c5496616f557a85c620c5e7c2c7e6e47fa9",
+        "test_merge_sha": "a53f9bb53c253cc8c62243a0d46774f44c06da53",
+        "tree_sha": "c11f47072dc422855d10137e0216205b61740c41",
+        "selection": "head-strict-current-base"
+      },
+      "invalidated_approvals": []
+    }
+  ],
+  "production_changes": false
+}
