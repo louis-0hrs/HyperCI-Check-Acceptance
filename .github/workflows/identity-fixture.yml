@@ -1,0 +1,14 @@
+name: Synthetic check identity fixture
+on:
+  push:
+    branches: [main, 'candidate/**']
+permissions:
+  contents: read
+jobs:
+  privacy-identity:
+    name: Publication privacy (all new commits)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Synthetic fixture only - no production privacy or native Mac coverage
+        run: echo 'Synthetic GitHub Actions identity fixture only. This is not HyperCine privacy validation or native Mac qualification.'
